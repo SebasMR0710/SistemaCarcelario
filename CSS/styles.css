@@ -1,0 +1,121 @@
+/* Estilo general dark mode */
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+h2, h4, .form-label {
+    color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+}
+
+.navbar-brand, .nav-link {
+    color: #e0e0e0;
+}
+
+.nav-link.active {
+    color: #ffc107;
+}
+
+.footer {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: none;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: white;
+}
+
+/* Estilos específicos para la página de actividades */
+
+/* Alinear el formulario en pantallas más grandes */
+#formActividades .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#formActividades .col-md-4 {
+    margin-bottom: 10px;
+}
+
+/* Color y estilo de la tabla */
+.table-striped {
+    background-color: #1e1e1e;
+}
+
+.table-striped thead {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+.table-striped tbody tr {
+    color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #333;
+}
+
+.table-striped tbody tr:hover {
+    background-color: #444;
+}
+
+/* Estilo de los botones */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-close {
+    background-color: #f8f9fa;
+}
+
+/* Estilos del modal */
+.modal-content {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+.modal-header {
+    border-bottom: 1px solid #444;
+}
+
+.modal-footer {
+    border-top: 1px solid #444;
+}
+
+/* Mejoras para pantallas pequeñas */
+@media (max-width: 768px) {
+    #formActividades .row {
+        display: block;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
